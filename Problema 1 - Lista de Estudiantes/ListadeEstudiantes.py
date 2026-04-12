@@ -14,26 +14,26 @@ lista = [Ale, Julieta, Chano, Pachano, Ricardo] #Se crea la lista con las person
 orden = "desc" #o "asc" para Ascendente
 
 def buscarMayorNum(lista):
-    mayorPersona = lista[0]
+    mayorPersona = lista[0] #Por default, la mayor va a ser la primera persona
     
-    for persona in lista:
-            if mayorPersona["num"] < persona["num"]:
-                mayorPersona = persona;
+    for persona in lista: #Se itera la lista
+            if mayorPersona["num"] < persona["num"]: #Si el número de la persona mayor es menor a la persona seleccionada
+                mayorPersona = persona #La persona mayor número ahora es la persona seleccionada
             else:
-                continue
+                continue #Sino, continua
 
-    return mayorPersona
+    return mayorPersona #Devuelve la persona con mayor número
 
 def buscarMinNum(lista):
-    menorPersona = lista[0]
+    menorPersona = lista[0] #Por default, la menor va a ser la primera persona
     
     for persona in lista:
-            if menorPersona["num"] > persona["num"]:
-                menorPersona = persona;
+            if menorPersona["num"] > persona["num"]: #Si el número de la persona menor es mayor a la persona seleccionada
+                menorPersona = persona #La persona con menor número ahora es la persona seleccionada
             else:
-                continue
+                continue #Sino, continua
 
-    return menorPersona
+    return menorPersona #Devuelve la persona con menor número
             
 
 def ordenarLista (lista, orden):
