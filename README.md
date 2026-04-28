@@ -1,4 +1,4 @@
-# <img align="center" src="./UTN_FBRA.jpg" alt="Windows Icon" height="50px" width="50px"/> UTN-Vault
+# <img align="center" src="./UTN_FBRA.jpg" alt="UTN FRBA Icon" height="50px" width="50px"/> UTN-Vault
 
 > **Repositorio de ejercicios y prácticas de la UTN-FRBA**  
 > | *Algoritmos y Estructura de Datos — K1028* | *Arquitectura de computadoras — K1024* |
