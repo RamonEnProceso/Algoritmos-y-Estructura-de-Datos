@@ -23,8 +23,8 @@ Este repositorio está pensado para ser usado en las **múltiples plataformas** 
 
 | Plataforma | Compilador | Notas |
 |---|---|---|
-| <img align="center" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Windows_11.png" alt="Windows Icon" height="15px" width="15px"/> **Windows** | `g++` | IDE: VS Code |
-| <img align="center" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/960px-Tux.svg.png" alt="Tux Image" height="15px" width="15px"/> **Pop!_OS** | `g++` | IDE: ZED |
+| <img align="center" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Windows_logo_-_2021.svg/500px-Windows_logo_-_2021.svg.png" alt="Windows Icon" height="15px" width="15px"/> **Windows** | `g++` | IDE: VS Code |
+| <img align="center" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/960px-Tux.svg.png" alt="Tux Image" height="20px" width="15px"/> **Pop!_OS** | `g++` | IDE: ZED |
 | <img align="center" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Android_Robot_Head_2023.svg/960px-Android_Robot_Head_2023.svg.png" alt="bugdroid Image" height="10px" width="15px"/> **Termux (Android)** | `clang++` | Teminal. Ideal para estudiar desde el celular |
 
 ---
