@@ -1,7 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include "Jugador.h"
-#include "calcularKDA.h"
+#include "asignarPuntos.h"
 #include "ordenarKDA.h"
 
 using namespace std;
@@ -9,12 +9,22 @@ using namespace std;
 int main(){
 
     Jugador ramon;
-    ramon.asesinatos=15;
-    ramon.muertes=4;
-    ramon.asistencias=20;
+    asignarPuntos(ramon,"Ramon",13,3,9);
 
-    Jugador *ramonPtr = &ramon;
+    Jugador lauti;
+    asignarPuntos(lauti,"Lauty",13,4,14);
 
-    cout<< fixed << setprecision(2) << calcularKDA(*ramonPtr) << endl;
+    Jugador manuel;
+    asignarPuntos(manuel,"Manuel",9,6,6);
+
+    Jugador lista[] = {ramon,lauti,manuel};
+
+    ordenarPorKDA(lista,3);
+
+    for (int i = 0; i < 3; i++)
+    {
+        Jugador *j = &lista[i];
+        cout << i+1 << ". "<< lista[i].nombre << " tuvo un KDA de: " << fixed << setprecision(2) << calcularKDA(*j) << endl;
+    }
 
 }

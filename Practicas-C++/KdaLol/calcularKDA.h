@@ -1,4 +1,8 @@
+#ifndef CALCULAR_KDA_H
+#define CALCULAR_KDA_H
+
 #include "Jugador.h"
+#pragma once
 
 float calcularKDA(Jugador &j) {
 
@@ -13,3 +17,4 @@ float calcularKDA(Jugador &j) {
     return kda;
 
 }
+#endif
