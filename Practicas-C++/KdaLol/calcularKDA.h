@@ -1,8 +1,15 @@
+#include "Jugador.h"
 
-int calcularKDA(int asesinatos, int muertes, int asistencias) {
+float calcularKDA(Jugador &j) {
 
-float kda =((int) (asesinatos+asistencias)/muertes*100 )/100;
+    if (j.muertes==0)
+    {
+        return j.asesinatos+j.asistencias;
+    }
+    
+    float kda = (float)(j.asesinatos+j.asistencias)/j.muertes;
 
-return kda;
+
+    return kda;
 
 }
