@@ -1,8 +1,7 @@
 #ifndef ORDENAR_KDA_H
 #define ORDENAR_KDA_H
 
-#include "Jugador.h"
-#include "calcularKDA.h"
+#include "Jugador.hpp"
 
 void ordenarPorKDA (Jugador lista[], int tam){
 
@@ -14,7 +13,7 @@ void ordenarPorKDA (Jugador lista[], int tam){
 
         for (int i = 0; i < tam-1; i++)
         {
-            if ( calcularKDA(lista[i]) < calcularKDA(lista[i+1]) )
+            if ( lista[i].calcularKDA() < lista[i+1].calcularKDA() )
             {
                 Jugador menor = lista[i];
                 esOrdenado = false;
