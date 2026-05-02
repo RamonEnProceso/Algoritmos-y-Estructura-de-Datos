@@ -12,7 +12,7 @@ int main(){
 
     cin >> cifraUnicode;
 
-    cout << "UTF-8: 0x" << conversorHexaUnicode("267A") << endl;
+    cout << "UTF-8: 0x" << conversorHexaUnicode(cifraUnicode) << endl;
     
 
     return 0;
