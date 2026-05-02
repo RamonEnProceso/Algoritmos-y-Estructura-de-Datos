@@ -1,7 +1,6 @@
 #ifndef CONVERSOR_A_BINARIO_H
 #define CONVERSOR_A_BINARIO_H
 #include <iostream>
-#include <cmath>
 #include <vector>
 
 using namespace std;
