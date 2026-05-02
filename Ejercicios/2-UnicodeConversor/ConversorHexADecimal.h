@@ -1,5 +1,5 @@
-#ifndef CONVERSOR_A_BINARIO_H
-#define CONVERSOR_A_BINARIO_H
+#ifndef CONVERSOR_HEX_DECIMAL_H
+#define CONVERSOR_HEX_DECIMAL_H
 #include <iostream>
 #include <cmath>
 
