@@ -3,23 +3,10 @@
 #include <iostream>
 #include <cmath>
 
+#include "ConversorCifrasHex.h"
+
 using namespace std;
 
-int conversorCifraHexDecimal (char hexN){
-    switch (hexN)
-    {
-    case 'A': return 10; break;
-    case 'B': return 11; break;
-    case 'C': return 12; break;
-    case 'D': return 13; break;
-    case 'E': return 14; break;
-    case 'F': return 15; break;
-
-    default:
-        return hexN - '0';
-        break;
-    }
-}
 
 int conversorNumHexDecimal (string numHex){
     
