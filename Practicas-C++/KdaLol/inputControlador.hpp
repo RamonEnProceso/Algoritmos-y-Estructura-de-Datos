@@ -6,9 +6,9 @@
 #include <vector>
 #include "Jugador.hpp"
 
-using namespace std
+using namespace std;
 
-class inputControlador{
+class InputControlador{
 
 private:
 
@@ -35,25 +35,28 @@ cout << "\n\n Usted quiere calcular el KDA de "<< cantidadJugadores<< "jugadores
 for (int i = 0 ; i<cantidadJugadores; i++){
 
 Jugador jugador;
-str nombre;
+string nombre;
 int asesinatos;
 int muertes;
 int asistencias;
 
 
 cout << "\n\nEl nombre jugador nro "<< i+1 << " es" << endl;
+cin >> nombre;
+
 
 pedirEntero("asesinatos", asesinatos);
 pedirEntero("muertes", muertes);
 pedirEntero("asistencias", asistencias);
 
-jugador.asignarDatos(nombre, asesinatos, muerte,asistencias);
+jugador.asignarDatos(nombre, asesinatos, muertes,asistencias);
 
+Jugadores.push_back(jugador);
 }
 
 }
 
-vector<Jugador> devolverJugadores{
+vector<Jugador> devolverJugadores(){
 return Jugadores;
 }
 
