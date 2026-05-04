@@ -2,8 +2,9 @@
 #define ORDENAR_KDA_H
 
 #include "Jugador.hpp"
+#include <vector>
 
-void ordenarPorKDA (Jugador lista[], int tam){
+void ordenarPorKDA (std::vector<Jugador> &lista, int tam){
 
     bool esOrdenado = false;
 

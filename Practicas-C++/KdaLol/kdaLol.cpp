@@ -1,26 +1,25 @@
 #include <iostream>
 #include <iomanip>
+#include <vector>
 #include "Jugador.hpp"
-#include "ordenarKDA.h"
+#include "ordenarKDA.hpp"
+#include "inputControlador.hpp"
 
 using namespace std;
 
 int main(){
 
-    Jugador ramon;
-    ramon.asignarDatos("Ramon",13,3,9);
+InputControlador controlador;
 
-    Jugador lauti;
-    lauti.asignarDatos("Lauty",13,4,14);
+    controlador.imprimirInicio();
 
-    Jugador manuel;
-    manuel.asignarDatos("Manuel",9,6,6);
+ vector<Jugador> lista = controlador.devolverJugadores();
 
-    Jugador lista[] = {ramon,lauti,manuel};
+ordenarPorKDA (lista,lista.size());
 
-    ordenarPorKDA(lista,3);
+cout<<"\n\n"<<endl;
 
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < lista.size(); i++)
     {
         Jugador *j = &lista[i];
 

@@ -29,8 +29,8 @@ void imprimirInicio(){
 
 cout << "\n==============================\nCalculadora de KDA\n=============================="<<endl;
 cout <<"\n\nIngrese la cantidad de jugadores: "<<endl;
-cin >> cantidadJugadores; cantidadJugadores = cantidadJugadores - '0';
-cout << "\n\n Usted quiere calcular el KDA de "<< cantidadJugadores<< "jugadores.\n" <<endl;
+cin >> cantidadJugadores;
+cout << "\n\n Usted quiere calcular el KDA de "<< cantidadJugadores<< " jugadores.\n" <<endl;
 
 for (int i = 0 ; i<cantidadJugadores; i++){
 
@@ -60,7 +60,7 @@ vector<Jugador> devolverJugadores(){
 return Jugadores;
 }
 
-}
+};
 
 
 
